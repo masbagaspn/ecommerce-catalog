@@ -1,0 +1,33 @@
+.ratings{
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2px;
+    border: 1px black;
+}
+
+.ratings-rate{
+    font-size: 1rem;
+    margin-right: 4px;
+}
+
+.rating{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    border-width: 2px;
+}
+.rating-men{
+    border: 1px solid var(--blue);
+}
+.rating-women{
+    border: 1px solid var(--purple);
+}
+.rating-active-men{
+    background-color: var(--blue);
+}
+.rating-active-women{
+    background-color: var(--purple);
+}

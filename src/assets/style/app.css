@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --purple: #720060;
+    --purple-secondary: #FDE2FF;
+    --blue: #002772;
+    --blue-secondary: #D6E6FF;
+    --black: #1E1E1E;
+    --dark-gray: #3F3F3F;
+    --light-gray: #DCDCDC;
+    --white: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+hr{
+    width: 100%;
+}
+
+.main{
+    max-width: 100%;
+    height: 100vh;
+    padding: 4rem 6rem;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-men{
+    background-image: url('../images/bg-men.png');
+}
+.main-women{
+    background-image: url('../images/bg-women.png');
+}
+.main-unavailable{
+    background-image: url('../images/bg-unavailable.png');
+}
+
+.card, .unavailable-card, .skeleton-card{
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: -1px 0px 49px -11px rgba(0,0,0,0.20);
+    -webkit-box-shadow: -1px 0px 49px -11px rgba(0,0,0,0.20);
+    -moz-box-shadow: -1px 0px 49px -11px rgba(0,0,0,0.20);
+}
+
+.card, .skeleton-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    gap: 4rem;
+    padding: 4rem 4.5rem;
+}
